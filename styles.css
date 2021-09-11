@@ -159,6 +159,42 @@ section {
     height: 100vh;
 }
 
+/* MOBILE FIXES START HERE */
+/* Switches to an image iwth a different aspect ratio at smaller screen sizes */
+@media (max-width: 1000px) {
+    #index-banner-image {
+        background: url("img/universal/mobile-splash.png") center no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Removes a bunch of padding/margins in the content of the main page when at smaller screen sizes in order to make it easier to read */
+@media (max-width: 767px) {
+    #media {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px -15px !important;
+    }
+}
+/* Recenters icons in footer (previously they were off by a small amount at small screen sizes) */
+@media (max-width: 767px) {
+    .row-xs-12.pt-4.pl-5.text-center.icons {
+        padding-left: 1rem !important;
+    }
+    /* Makes Twitter widget shorter  at mobile sizes */
+    #twitter-widget-0 {
+        height: 450px !important;
+    }
+}
+
+
+/* Fixes weird navbar wrapping on small screen size*/
+img.logo {
+    width: 80px;
+}
+
+/* MOBILE FIXES END HERE */
+
 /*Arrow code that I copied*/
     #arrowdown a {
   padding-top: 60px;
@@ -167,7 +203,8 @@ section {
 }
 #arrowdown a span {
   position: absolute;
-  top: 7vh;
+  /* Changed from 7vh (which put it too low) to 3vh, which looks about right */
+  top: 3vh;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -229,7 +266,8 @@ section {
     background: var(--grey);
     min-height: 100%;
     position: absolute;
-    top: 180vh;
+    /* This line was removed as it left a weird space when an image was collapsed on mobile */
+    /* top: 180vh; */
 }
 
 #slider::after, #index-content::after {
