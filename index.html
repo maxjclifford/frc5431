@@ -56,8 +56,8 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="icon" type="image/png" href="/img/universal/titlelesslogo.png" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
 
     <link rel="manifest" href="/manifest.json" />
 
@@ -93,7 +93,6 @@ $('#zoomer').carousel({
     <div id="navbar"> </div>
 
     <main>
-        
         <!--Top banner-->
         <section id="banner">
             <div id="index-banner-image" class="rellax" data-rellax-speed="-1"></div>
@@ -101,32 +100,32 @@ $('#zoomer').carousel({
                 <a href="#slider"><span></span></a>
             </div>
         </section>
-        
 
-        <div id="zoomer" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
+        <div id="zoomer" class="carousel slide carousel-fade d-none d-sm-block" data-ride="carousel">
 
-  <div class="carousel-inner">
+            <div class="carousel-inner">
 
-    <div class="carousel-item active" id="activeOnLoad"> <!-- get the ID -->
-      <div class="item-inner" style="background-image: url('https://i.picsum.photos/id/874/1920/1680.jpg?hmac=KDczwg-ejraLUmoflMNUBCkt1LyLxNreJptc7RQajFY')"></div>
-    </div>
+                <div class="carousel-item active" id="activeOnLoad"> <!-- get the ID -->
+                <div class="item-inner" style="background-image: url('https://i.picsum.photos/id/874/1920/1680.jpg?hmac=KDczwg-ejraLUmoflMNUBCkt1LyLxNreJptc7RQajFY')"></div>
+                </div>
 
-    <div class="carousel-item">
-      <div class="item-inner" style="background-image: url('https://i.picsum.photos/id/878/1920/1680.jpg?hmac=_FQShv6E5HdjI6OKgjozFJQz8SXlT1OwmqijW5jHGQo')"></div>
-    </div>
+                <div class="carousel-item">
+                <div class="item-inner" style="background-image: url('https://i.picsum.photos/id/878/1920/1680.jpg?hmac=_FQShv6E5HdjI6OKgjozFJQz8SXlT1OwmqijW5jHGQo')"></div>
+                </div>
 
-    <div class="carousel-item">
-      <div class="item-inner" style="background-image: url('https://i.picsum.photos/id/870/1920/1680.jpg?hmac=IAkVJX2zYS6BuaMLixYh5xoyOpeDH5WkcGTacBUPPXM')"></div>
-    </div>
+                <div class="carousel-item">
+                <div class="item-inner" style="background-image: url('https://i.picsum.photos/id/870/1920/1680.jpg?hmac=IAkVJX2zYS6BuaMLixYh5xoyOpeDH5WkcGTacBUPPXM')"></div>
+                </div>
 
-  </div>
-  <a class="carousel-control-prev" href="#zoomer" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </a>
-  <a class="carousel-control-next" href="#zoomer" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </a>
-</div>
+            </div>
+            <a class="carousel-control-prev" href="#zoomer" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#zoomer" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+        </div>
         <!-- /.carousel -->
 
         <!--End of slider-->
@@ -134,56 +133,74 @@ $('#zoomer').carousel({
         <!--Everything below the slider-->
         <section id="index-content">
 
-            <div class="container-fluid pb-sm-0 pb-md-4">
+            <div class="container-fluid pb-0 pb-md-4">
 
                 <!--Three boxes containing information about FIRST, PAHS and NTX-->
-                <div class="row pt-0">
-                    <div class="col-md p-4" id="titan-blue">
-                        <div class="text-center mt-1">
-                            <a href="https://www.firstinspires.org/robotics/frc" target="_blank"><img src="img\Logos\frc.png" alt="North Texas Robotics (NTX)" class="img-fluid" /></a>
+                <div class="card-group pt-3">
+                    <div class="card p-2 p-lg-4" id="titan-blue">
+                        <div class="mt-1">
+                            <img class="card-img-overlay d-block d-md-none mh-100 mw-100" src="img/Logos/FRC_condensed.png" alt="North Texas Robotics (NTX)" />
+                            <img class="card-img-overlay d-none d-md-flex ml-md-auto d-lg-none mh-100 mw-100" src="img/Logos/FRC.png" alt="North Texas Robotics (NTX)" />
+                            <a href="https://www.firstinspires.org/robotics/frc" target="_blank"><img class="card-img-top d-none d-lg-block" src="img\Logos\frc.png" alt="North Texas Robotics (NTX)" /></a>
                         </div>
-                        <h2 class="mt-3">FIRST Robotics</h2>
-                        <div class="line mb-3"></div>
-                        <p>FIRST (For Inspiration and Recognition of Science and Technology) was founded in 1989 to inspire young people’s interest and participation in science and technology. Over the past 30 years, FIRST participation is proven to encourage students to pursue education and careers in STEM-related fields.</p>
-                        <h3><a href="https://www.firstinspires.org/robotics/frc" target="_blank">Find Out More ></a></h3>
+                        <div class="card-body">
+                            <h2 class="card-title mt-3">FIRST Robotics</h2>
+                            <div class="line mb-3"></div>
+                            <p class="card-text">FIRST (For Inspiration and Recognition of Science and Technology) was founded in 1989 to inspire young people’s interest and participation in science and technology. Over the past 30 years, FIRST participation is proven to encourage students to pursue education and careers in STEM-related fields.</p>
+                        </div>
+                        <div class="card-footer">
+                            <h3><a href="https://www.firstinspires.org/robotics/frc" target="_blank">Find Out More ></a></h3>
+                        </div>
                     </div>
-                    <div class="col-md p-4" id="titan-navy">
-                        <div class="text-center mt-1">
-                            <a href="https://www.pisd.edu/academy" target="_blank"><img src="img\Logos\pahs_helmet.png" alt="Plano ISD Academy High School (AHS)" class="img-fluid" /></a>
+                    <div class="w-100 pt-3 d-none d-sm-block d-lg-none"><!-- wrap on sm--></div>
+                    <div class="card p-2 p-lg-4" id="titan-navy">
+                        <div class="mt-1">
+                            <img class="card-img-overlay d-block d-md-flex ml-md-auto d-lg-none mh-100 mw-100" src="img\Logos\pahs_helmet.png" alt="Plano ISD Academy High School (AHS)" />
+                            <a href="https://www.pisd.edu/academy" target="_blank"><img class="card-img-top d-none d-lg-block" src="img\Logos\pahs_helmet.png" alt="Plano ISD Academy High School (AHS)" /></a>
                         </div>
-                        <h2 class="mt-3">Plano ISD Academy</h2>
-                        <div class="line mb-3"></div>
-                        <p>Plano ISD Academy High School is an innovative, STEAM, project-based 9th-12th grade learning community focused on interdisciplinary connections to foster a professional environment, inspire creativity, and empower students to collaborate and compete in a rapidly changing world.</p>
-                        <h3><a href="https://www.pisd.edu/academy" target="_blank">Find Out More ></a></h3>
+                        <div class="card-body">
+                            <h2 class="card-title mt-3">Plano ISD Academy</h2>
+                            <div class="line mb-3"></div>
+                            <p class="card-text">Plano ISD Academy High School is an innovative, STEAM, project-based 9th-12th grade learning community focused on interdisciplinary connections to foster a professional environment, inspire creativity, and empower students to collaborate and compete in a rapidly changing world.</p>
+                        </div>
+                        <div class="card-footer">
+                            <h3><a href="https://www.pisd.edu/academy" target="_blank">Find Out More ></a></h3>
+                        </div>
                     </div>
-                    <div class="col-md p-4" id="titan-purple">
-                        <div class="text-center mt-1">
-                            <a href="https://www.pisd.edu/academy" target="_blank"><img src="img\Logos\ntx.png" alt="FIRST Robotics (FRC)" class="img-fluid" id="ntx-logo" /></a>
+                    <div class="w-100 pt-3 d-none d-sm-block d-lg-none"><!-- wrap on sm--></div>
+                    <div class="card p-2 p-lg-4" id="titan-purple">
+                        <div class="mt-1">
+                            <img class="card-img-overlay d-block d-md-none mh-100 mw-100" src="img\Logos\ntx_no_text.png" alt="FIRST Robotics (FRC)" />
+                            <img class="card-img-overlay d-none d-md-flex ml-md-auto d-lg-none mh-100 mw-100" src="img\Logos\ntx.png" alt="FIRST Robotics (FRC)" />
+                            <a href="https://www.pisd.edu/academy" target="_blank"><img class="card-img-top d-none d-lg-block" src="img\Logos\ntx.png" alt="FIRST Robotics (FRC)" /></a>
                         </div>
-                        <h2 class="mt-3">NTX Robotics</h2>
-                        <div class="line mb-3"></div>
-                        <p>North Texas Robotics was founded in 2015 to bring teams together to further STEM and FIRST across North Texas. Its teams work hard to promote and create inter-team alliances across the area. NTX is responsible for the North Texas Coach and Mentor Workshop and the NTX Tournament of Robots. </p>
-                        <h3><a href="https://www.ntxrobotics.com/" target="_blank">Find Out More ></a></h3>
+                        <div class="card-body">
+                            <h2 class="card-title mt-3">NTX Robotics</h2>
+                            <div class="line mb-3"></div>
+                            <p class="card-text">North Texas Robotics was founded in 2015 to bring teams together to further STEM and FIRST across North Texas. Its teams work hard to promote and create inter-team alliances across the area. NTX is responsible for the North Texas Coach and Mentor Workshop and the NTX Tournament of Robots. </p>
+                        </div>
+                        <div class="card-footer">
+                            <h3><a href="https://www.ntxrobotics.com/" target="_blank">Find Out More ></a></h3>
+                        </div>
                     </div>
                 </div>
 
                 <!--Main section containing embed videos and Twitter timeline-->
-                <div class="px-md-5 px-sm-0">
-                <div class="row mt-3 mx-md-3 mx-sm-0 px-5 py-4" id="media">
-                    <div class="col-xs-8 col-sm-10 col-md-8 col-lg-8">
+                <div class="px-xl-5 px-md-3 px-0">
+                <div class="row mt-3 mx-lg-3 mx-md-2 mx-0 px-xl-5 px-md-4 px-2 py-md-4 py-3" id="media">
+                    <div class="col col-md-8">
                         <h2>Important Video</h2>
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe width="700" height="394" src="https://www.youtube.com/embed/V_4pVFlNjqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <p>Our 2019-2020 season chairman’s video. The video talks about our drive and passion for spreading the seeds of STEM education, and covers how we do it!</p>
-                        
                         <h2>Some Other Important Video</h2>
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe  width="700" height="394"  src="https://www.youtube.com/embed/wSA6InzFAZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <p>This video talks about who FIRST is and what FIRST Robotics Competition (FRC) does. Impacting many highschool students around the world preparing them for the future through fun challenges.</p>
                     </div>
-                    <div class="col-xs-4 col-sm-10 col-md-4 col-lg-4">
+                    <div class="col col-md-4">
                         <h2>Stay Up to Date!</h2>
                         <a class="twitter-timeline" data-height="1000" href="https://twitter.com/frc5431?ref_src=twsrc%5Etfw">Tweets by frc5431</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
